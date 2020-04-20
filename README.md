@@ -20,9 +20,10 @@
 ## Configuration:
 	dropbox:
 		Locate dropbox.python, if you don't have this, download it from https://www.dropbox.com/install?os=lnx. It doesn't matter where you put this file, but it should be located in your '~' dir as you can run it from your default location this way.
-		To use this you can run e.g.:
-		```
-		python dropbox.py status
+		Usage:
+			```
+			python dropbox.py status
 
-		python dropbox.py start
-		'''
+			python dropbox.py start
+			'''
+### Test column for under-under category
