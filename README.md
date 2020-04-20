@@ -2,13 +2,16 @@
 
 ## Introduction
 	Temporary repository since my WIKI crashed.
-	Setup descriptions, files, notes and configurations regarding setting up manjaro
+	Setup descriptions, files, notes and configurations regarding setting up manjaro.
 
 ## Setup:
 
 ### Manjaro:
 #### Fix freeze on boot 
-	Download KDE, burn image to USB. Boot and configure boot by pressing 'E' on boot option. Locate "quiet" in config under "setparams". Replace "quiet" with "acpi_osi='Windows 2018'" Hit 'F10' to start booting.
+	Download KDE, burn image to USB. 
+	Boot and configure boot by pressing 'E' on boot option. 
+	Locate "quiet" in config under "setparams".
+	Replace "quiet" with "acpi_osi='Windows 2018'" Hit 'F10' to start booting.
 
 ### Git
 	https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
@@ -84,12 +87,13 @@
 
 ## Package management
 	In general when you want to install something you have to download a package and build them. A tidy way to do this, is to first make a directory for your builds e.g -/builds in your home directory and cd into this dir. Then:
-		'''
-		git clone https://aur.archlinux.org/PACKAGENAME
 
-		cd PACKAGENAME/
+	'''
+	git clone https://aur.archlinux.org/PACKAGENAME
 
-		makepgk -sri
-		'''
+	cd PACKAGENAME/
+
+	makepgk -sri
+	'''
 ### Sources
 	https://wiki.archlinux.org/index.php/Arch_User_Repository
