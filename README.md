@@ -10,6 +10,8 @@
 #### Fix freeze on boot 
 	Download KDE, burn image to USB. Boot and configure boot by pressing 'E' on boot option. Locate "quiet" in config under "setparams". Replace "quiet" with "acpi_osi='Windows 2018'" Hit 'F10' to start booting.
 
+### Git
+	https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
 ### Dropbox:
 #### Installation
 	https://www.dropbox.com/install?os=lnx
