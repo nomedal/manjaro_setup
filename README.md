@@ -16,7 +16,7 @@
 #### Configuration
 	Locate dropbox.python, if you don't have this, download it from https://www.dropbox.com/install?os=lnx. It doesn't matter where you put this file, but it should be located in your '~' dir as you can run it from your default location this way.
 #### Usage
-#### Example
+##### Example
 	'''
 	python dropbox.py status
 
