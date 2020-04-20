@@ -2,7 +2,7 @@
 
 ## Introduction
 	Temporary repository since my WIKI crashed.
-	Setup descriptions, files, notes and configurations regarding setting up manjaro.
+	Includes setup descriptions, files, notes and configurations regarding setting up manjaro.
 
 ## Setup:
 
@@ -15,11 +15,19 @@
 
 ### Git
 	https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
+#### User setup
+	'''
+	git config --global user.name "USERNAME"
+	git config --global user.email "EMAIL_FOR_GITUSER"
+
 ### Dropbox:
 #### Installation
 	https://www.dropbox.com/install?os=lnx
 #### Configuration
-	Locate dropbox.python, if you don't have this, download it from https://www.dropbox.com/install?os=lnx. It doesn't matter where you put this file, but it should be located in your '~' dir as you can run it from your default location this way.
+	Locate dropbox.py.
+	If you don't have this, download it from https://www.dropbox.com/install?os=lnx. 
+	It doesn't matter where you put this file, but it should be located in your '~' dir. 
+	This way you can run it from your default dir.
 #### Usage:
 ##### Example
 	'''
@@ -86,7 +94,8 @@
 	'''
 
 ## Package management
-	In general when you want to install something you have to download a package and build them. A tidy way to do this, is to first make a directory for your builds e.g -/builds in your home directory and cd into this dir. Then:
+	In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
+	Cd into this directory, then:
 
 	'''
 	git clone https://aur.archlinux.org/PACKAGENAME
