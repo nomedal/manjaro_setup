@@ -43,3 +43,16 @@
 ### Kvantum:
 #### Installation
 	gcc: pacman -Sy gcc
+
+### Slack:
+#### Installation
+	'''
+	sudo pacman -Syu
+
+	sudo pacman -S git base-devel
+
+	git clone https://aur.archlinux.org/slack-desktop.git
+
+	cd slack-desktop/
+
+	 makepkg -sri
