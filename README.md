@@ -55,4 +55,41 @@
 
 	cd slack-desktop/
 
-	 makepkg -sri
+	makepkg -sri
+	'''
+
+### Discord:
+#### Install
+	'''
+	sudo pacman -S discord 
+	'''
+#### Sources
+	https://newbloghosting.com/how-to-install-discord-on-arch-linux/
+
+### Spotify
+#### Install
+	'''
+	git clone https://aur.archlinux.org/spotify.git
+	
+	cd spotify/
+
+	makepkg -sri
+	'''
+
+	If you get an key error, try:
+	
+	'''
+	makepgk --skippgpcheck
+	'''
+
+## Package management
+	In general when you want to install something you have to download a package and build them. A tidy way to do this, is to first make a directory for your builds e.g -/builds in your home directory and cd into this dir. Then:
+		'''
+		git clone https://aur.archlinux.org/PACKAGENAME
+
+		cd PACKAGENAME/
+
+		makepgk -sri
+		'''
+### Sources
+	https://wiki.archlinux.org/index.php/Arch_User_Repository
