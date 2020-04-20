@@ -1,6 +1,6 @@
 # manjaro_setup
 
-## Introduction:
+## Introduction
 	Temporary repository since my WIKI crashed.
 	Setup descriptions, files, notes and configurations regarding setting up manjaro
 
@@ -33,7 +33,7 @@
 	sudo pacman -Syu sublime-text
 	'''
 #### Usage:
-##### Example:
+##### Example
 	'''
 	subl sometext.py
 	'''
