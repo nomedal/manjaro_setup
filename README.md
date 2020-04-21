@@ -15,6 +15,8 @@
 
 ### Git
 	https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
+	https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+	https://help.github.com/en/github/using-git/which-remote-url-should-i-use
 #### User setup
 	'''
 	git config --global user.name "USERNAME"
@@ -92,6 +94,27 @@
 	'''
 	makepgk --skippgpcheck
 	'''
+
+### Mailspring
+#### Install
+	'''
+	git clone https://aur.archlinux.org/mailspring.git
+
+	cd mailspring/
+
+	makepkg -sri
+	'''
+
+	If you are missing keyring package:
+	'''
+	sudo pacman -S gnome-keyring
+	'''
+#### Sources
+	https://forum.manjaro.org/t/installing-mailspring-on-manjaro-kde/107953
+
+### NordVPN
+#### Install
+	https://wiki.archlinux.org/index.php/NordVPN
 
 ## Package management
 	In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
