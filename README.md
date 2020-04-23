@@ -116,6 +116,30 @@
 #### Install
 	https://wiki.archlinux.org/index.php/NordVPN
 
+### xrdp
+#### Install
+	'''
+	git https://aur.archlinux.org/xrdp.git
+
+	cd xrdp/
+
+	makepkg -sri
+	'''
+#### Configuration
+	[COMING]
+
+### FreeRDP
+#### Install
+	'''
+	git clone git://github.com/FreeRDP/FreeRDP.git
+	'''	
+### Snapd
+#### installation
+	https://snapcraft.io/install/remmina/manjaro
+
+### Remmina
+#### Installation
+
 ## Package management
 	In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
 	Cd into this directory, then:
