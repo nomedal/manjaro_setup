@@ -4,6 +4,7 @@
 	Temporary repository since my WIKI crashed.
 	Includes setup descriptions, files, notes and configurations regarding setting up manjaro.
 
+	This page is meant to be navigated with CTRL-F searching, so do that. 
 ## Setup:
 
 ### Manjaro:
@@ -146,13 +147,35 @@
 	'''
 	sudo remmina &
 	'''
+
+	use:
+	'''
+	ctrl + c
+	'''
+	to remove process and errors in terminal.
+#### Configuration
+	To add an existing .rdp file, press the three horizontal lines in the top right corner to access settings. 
+
+	Press 'import', locate your file and press 'import'. 
+	Your connection will be added to the list, press it. 
+
+	Fill inn form. 
+
+	Note that on remote desktop services in windows, the login username often contains the domain aswell, on the form: 'uio\USERNAME'. 
+	This is less common in linux, and we don't use the '\' here neither. So username and domain are seperate. 
+
+#### Note
+	Remmina refuses to launch from application manager and or without sudo from terminal.
+
 ### Latte
 #### Installation
 	'''
 	sudo pacman -S latte-dock
 	'''
-#### Configuration
+#### Usage
 	Launch from application launcher, after restart.
+#### Note
+	Similiarly to remmina, latte refuses to launch from terminal.
 
 ### Sweet KDE
 #### Installation
@@ -179,6 +202,7 @@
 ##### Clear download/upload limit
 	'''
 	sudo wondershaper -c ADAPTER
+	'''
 ##### Example:
 	'''
 	sudo wondershaper -a wlp4s0 -d 20000
