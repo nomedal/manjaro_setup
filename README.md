@@ -210,6 +210,11 @@
 	sudo wondershaper -c -a wlp4s0
 	'''
 
+### Virtual manager
+#### Installation
+	'''
+	sudo pacman -S qemu libvirt ovmf virt-manager
+	'''
 ## Package management
 	In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
 	Cd into this directory, then:
