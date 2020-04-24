@@ -139,6 +139,52 @@
 
 ### Remmina
 #### Installation
+	'''
+	sudo pacman -Syu remmina freerdp
+	'''
+#### Usage
+	'''
+	sudo remmina &
+	'''
+### Latte
+#### Installation
+	'''
+	sudo pacman -S latte-dock
+	'''
+#### Configuration
+	Launch from application launcher, after restart.
+
+### Sweet KDE
+#### Installation
+	https://github.com/EliverLara/Sweet.git
+#### Sources
+	https://store.kde.org/p/1294174/
+
+### Wondershaper
+#### Installation
+	'''
+	git clone https://aur.archlinux.org/wondershaper-git.git
+
+	cd wonder-git/
+
+	makepkg-sri
+	'''
+#### Usage
+##### Limit download/upload speed
+	'''
+	sudo wondershaper -a ADAPTER -d DOWNLOADLIMIT -u UPLOADLIMIT
+	'''
+
+	Note that speed is in 'kbps'.
+##### Clear download/upload limit
+	'''
+	sudo wondershaper -c ADAPTER
+##### Example:
+	'''
+	sudo wondershaper -a wlp4s0 -d 20000
+	
+	sudo wondershaper -c -a wlp4s0
+	'''
 
 ## Package management
 	In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
@@ -153,3 +199,4 @@
 	'''
 ### Sources
 	https://wiki.archlinux.org/index.php/Arch_User_Repository
+	https://wiki.manjaro.org/index.php?title=Arch_User_Repository
