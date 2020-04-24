@@ -93,7 +93,7 @@
 	If you get an key error, try:
 	
 	'''
-	makepgk --skippgpcheck
+	makepkg --skippgpcheck
 	'''
 
 ### Mailspring
