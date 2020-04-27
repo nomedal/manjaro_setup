@@ -58,6 +58,8 @@
 #### Installation
 	gcc: pacman -Sy gcc
 
+	or use application manager pacman
+
 ### Slack:
 #### Installation
 	'''
@@ -229,3 +231,11 @@
 ### Sources
 	https://wiki.archlinux.org/index.php/Arch_User_Repository
 	https://wiki.manjaro.org/index.php?title=Arch_User_Repository
+
+## .bashrc
+	Useful aliases:
+	'''
+	alias multipull="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
+	
+	alias home="cd ~"
+	'''
