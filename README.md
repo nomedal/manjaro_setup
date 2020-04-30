@@ -210,6 +210,21 @@
 	sudo wondershaper -c -a wlp4s0
 	'''
 
+### Logitech G920 FFB
+#### Introductions:
+    Launcher:Steam
+Customizations:Not Listed
+
+    I needed to add the CodeMasters CA to my system trusted CA : https://www.upload.ee/files/9626680/codemasters.pem.html
+
+    To make my Logitech G920 work with force feedback I needed to disable steam input and use this workaround :
+
+    https://github.com/berarma/ffbtools
+
+    Compile it and add this to the game steam launch options :
+
+    /FFBWRAP_PATH/bin/ffbwrap --update-fix /dev/input/event3 -- %command%
+
 ### Virtual manager
 #### Installation
 	'''
