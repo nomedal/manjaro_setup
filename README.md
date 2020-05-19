@@ -58,6 +58,8 @@
 #### Installation
 	gcc: pacman -Sy gcc
 
+	or use application manager pacman
+
 ### Slack:
 #### Installation
 	'''
@@ -93,7 +95,7 @@
 	If you get an key error, try:
 	
 	'''
-	makepgk --skippgpcheck
+	makepkg --skippgpcheck
 	'''
 
 ### Mailspring
@@ -210,21 +212,6 @@
 	sudo wondershaper -c -a wlp4s0
 	'''
 
-### Logitech G920 FFB
-#### Introductions:
-    Launcher:Steam
-Customizations:Not Listed
-
-    I needed to add the CodeMasters CA to my system trusted CA : https://www.upload.ee/files/9626680/codemasters.pem.html
-
-    To make my Logitech G920 work with force feedback I needed to disable steam input and use this workaround :
-
-    https://github.com/berarma/ffbtools
-
-    Compile it and add this to the game steam launch options :
-
-    /FFBWRAP_PATH/bin/ffbwrap --update-fix /dev/input/event3 -- %command%
-
 ### Virtual manager
 #### Installation
 	'''
@@ -244,3 +231,12 @@ Customizations:Not Listed
 ### Sources
 	https://wiki.archlinux.org/index.php/Arch_User_Repository
 	https://wiki.manjaro.org/index.php?title=Arch_User_Repository
+
+## .bashrc
+	Useful aliases:
+	'''
+	alias multipull="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
+	
+	alias home="cd ~"
+	'''
+
