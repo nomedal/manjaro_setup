@@ -21,19 +21,20 @@
   * [Package management](#package-management)
 
 ## Introduction
-Temporary repository since my WIKI crashed.
+Temporary repository since my [WIKI](https://nomedal.github.io/) crashed, but is now up and running.
+This is now my "main" wiki, since its easier to update on the fly. The other wiki is more a "aesthetic" project. 
 Includes setup descriptions, files, notes and configurations regarding setting up manjaro.
 
-This page is meant to be navigated with CTRL-F searching, so do that. 
+For easier navigation you could also use `CTRL-F` searching.
 
 ## Setup:
 
 ### Manjaro:
 #### Fix freeze on boot 
 * Download KDE, burn image to USB. 
-* Boot and configure boot by pressing 'E' on boot option. 
-* Locate "quiet" in config under "setparams".
-* Replace "quiet" with "acpi_osi='Windows 2018'" Hit 'F10' to start booting.
+* Boot and configure boot by pressing `e` on boot option. 
+* Locate `quiet` in config under `setparams`.
+* Replace `quiet` with `acpi_osi='Windows 2018'` Hit `F10` to start booting.
 
 ### Git
 https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
@@ -111,19 +112,19 @@ https://newbloghosting.com/how-to-install-discord-on-arch-linux/
 
 ### Spotify
 #### Install
-	'''
+	```
 	git clone https://aur.archlinux.org/spotify.git
 	
 	cd spotify/
 
 	makepkg -sri
-	'''
+	```
 
 If you get an key error, try:
 	
-	'''
+	```
 	makepkg --skippgpcheck
-	'''
+	```
 ### NordVPN
 #### Install
 https://wiki.archlinux.org/index.php/NordVPN
@@ -203,8 +204,8 @@ Note that speed is in 'kbps'.
 	sudo pacman -S qemu libvirt ovmf virt-manager
 	```
 ## Package management
-	In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
-	Cd into this directory, then:
+In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
+Cd into this directory, then:
 
 	```
 	git clone https://aur.archlinux.org/PACKAGENAME
