@@ -1,10 +1,19 @@
 # manjaro_setup
 
+## Table of Contents
+
+  * [Introduction](#introduction)
+  * [Setup](#setup)
+    * [Manjaro](#manjaro)
+    * [Building](#building)
+      * [On Windows](#on-windows)
+
 ## Introduction
 	Temporary repository since my WIKI crashed.
 	Includes setup descriptions, files, notes and configurations regarding setting up manjaro.
 
 	This page is meant to be navigated with CTRL-F searching, so do that. 
+
 ## Setup:
 
 ### Manjaro:
