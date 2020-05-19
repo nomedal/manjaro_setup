@@ -5,8 +5,20 @@
   * [Introduction](#introduction)
   * [Setup](#setup)
     * [Manjaro](#manjaro)
-    * [Building](#building)
-      * [On Windows](#on-windows)
+    * [Git](#git)
+  	* [Dropbox](#dropbox)
+  	* [Sublime text](#sublime-text)
+  	* [Kvantum]
+  	* [Slack](#slack)
+  	* [Discord]
+  	* [Spotify]
+  	* [NordVPN]
+  	* [Remmina]
+  	* [Latte]
+  	* [Sweet KDE]
+  	* [Wondershaper]
+  	* [Virtual manager]
+  * [Package management]
 
 ## Introduction
 	Temporary repository since my WIKI crashed.
@@ -106,48 +118,9 @@
 	'''
 	makepkg --skippgpcheck
 	'''
-
-### Mailspring
-#### Install
-	'''
-	git clone https://aur.archlinux.org/mailspring.git
-
-	cd mailspring/
-
-	makepkg -sri
-	'''
-
-	If you are missing keyring package:
-	'''
-	sudo pacman -S gnome-keyring
-	'''
-#### Sources
-	https://forum.manjaro.org/t/installing-mailspring-on-manjaro-kde/107953
-
 ### NordVPN
 #### Install
 	https://wiki.archlinux.org/index.php/NordVPN
-
-### xrdp
-#### Install
-	'''
-	git https://aur.archlinux.org/xrdp.git
-
-	cd xrdp/
-
-	makepkg -sri
-	'''
-#### Configuration
-	[COMING]
-
-### FreeRDP
-#### Install
-	'''
-	git clone git://github.com/FreeRDP/FreeRDP.git
-	'''	
-### Snapd
-#### installation
-	https://snapcraft.io/install/remmina/manjaro
 
 ### Remmina
 #### Installation
