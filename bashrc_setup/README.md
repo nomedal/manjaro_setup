@@ -18,3 +18,7 @@ This includes: 
 
 ## Uninstallation:
 	`./uninstall.sh`
+
+## Note:
+
+Refrain from using the installation process without using the uninstallation process first. It's a simple dumb script, and using the installation process repeatitly will destroy overwrite and therefore destroy the backupcode, and also bloat the .bashrc code.
