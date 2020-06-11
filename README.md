@@ -7,22 +7,16 @@
     * [Manjaro](#manjaro)
     * [Git](#git)
   	* [Dropbox](#dropbox)
-  	* [Sublime text](#sublime-text)
-  	* [Kvantum](#kvantum)
-  	* [Slack](#slack)
-  	* [Discord](#discord)
-  	* [Spotify](#spotify)
   	* [NordVPN](#nordvpn)
   	* [Remmina](#remmina)
-  	* [Latte](#latte)
-  	* [Sweet KDE](#sweet-kde)
   	* [Wondershaper](#wondershaper)
   	* [Virtual manager](#virtual-manager)
   * [Package management](#package-management)
 
 ## Introduction
 Temporary repository since my [WIKI](https://nomedal.github.io/) crashed, but is now up and running.
-This is now my "main" wiki, since its easier to update on the fly. The other wiki is more a "aesthetic" project. 
+This is now my "main" wiki for manjaro setup, since its easier to update on the fly. The other wiki is more a "aesthetic" project. 
+
 Includes setup descriptions, files, notes and configurations regarding setting up manjaro.
 
 For easier navigation you could also use `CTRL-F` searching.
@@ -35,6 +29,14 @@ For easier navigation you could also use `CTRL-F` searching.
 * Boot and configure boot by pressing `e` on boot option. 
 * Locate `quiet` in config under `setparams`.
 * Replace `quiet` with `acpi_osi='Windows 2018'` Hit `F10` to start booting.
+
+### Clonezilla
+#### Making a backup
+* Use the live boot USB device which you used for Manjaro installation. 
+* Backup harddrive or drive to use for Manjaro backup. 
+* Launch live boot manjaro from USB.
+* Open terminal `ctrl + alt + t` and type `sudo clonezilla`. 
+* Follow the setup, note that the folder you choose to backup your manjaro to, need to be in that media's `root`.
 
 ### Git
 https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
@@ -63,68 +65,6 @@ https://www.dropbox.com/install?os=lnx
 	python dropbox.py start
 	```
 
-### Sublime text:
-#### Installation
-	```
-	curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
-	
-	echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
-	
-	sudo pacman -Syu sublime-text
-	```
-#### Usage:
-##### Example
-	```
-	subl sometext.py
-	```
-
-### Kvantum:
-#### Installation
-	```
-	pacman -Sy gcc
-	```
-
-Or use application manager pacman
-
-### Slack:
-#### Installation
-	```
-	sudo pacman -Syu
-
-	sudo pacman -S git base-devel
-
-	git clone https://aur.archlinux.org/slack-desktop.git
-
-	cd slack-desktop/
-
-	makepkg -sri
-	```
-
-### Discord:
-#### Install
-	```
-	sudo pacman -S discord 
-	```
-
-Or use application manager pacman.
-#### Sources
-https://newbloghosting.com/how-to-install-discord-on-arch-linux/
-
-### Spotify
-#### Install
-	```
-	git clone https://aur.archlinux.org/spotify.git
-	
-	cd spotify/
-
-	makepkg -sri
-	```
-
-If you get an key error, try:
-	
-	```
-	makepkg --skippgpcheck
-	```
 ### NordVPN
 #### Install
 https://wiki.archlinux.org/index.php/NordVPN
@@ -154,22 +94,6 @@ to remove process and errors in terminal.
 
 #### Note
 Remmina refuses to launch from application manager and or without sudo from terminal.
-
-### Latte
-#### Installation
-	```
-	sudo pacman -S latte-dock
-	```
-#### Usage
-Launch from application launcher, after restart.
-#### Note
-Similiarly to remmina, latte refuses to launch from terminal.
-
-### Sweet KDE
-#### Installation
-https://github.com/EliverLara/Sweet.git
-#### Sources
-https://store.kde.org/p/1294174/
 
 ### Wondershaper
 #### Installation
