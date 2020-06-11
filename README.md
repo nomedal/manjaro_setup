@@ -38,6 +38,25 @@ For easier navigation you could also use `CTRL-F` searching.
 * Open terminal `ctrl + alt + t` and type `sudo clonezilla`. 
 * Follow the setup, note that the folder you choose to backup your manjaro to, need to be in that media's `root`.
 
+#### Troubleshooting:
+
+##### How to find disks, where they are located and what type they are:
+	```
+	sudo fdisk -l
+	
+	df
+
+	sudo parted -l
+	```
+##### GTP and MBR mismatch error	
+If you get the error saying that you have two concurrent partitioning tables working the disk you want to backup, or save to, you have to fix this first. The thing is that if the drive that you want to backup have been used for anything else except linux in the past, there may be some remnants of other tables still on it. There is a command that you can run, if you are fairly certain the GPT remnants are nothing that you really need that fixes this problem instantly, but beware that it deletes this data.
+
+NB! BE VERY CARFUL NOT TO GET A TYPO HERE. Double check, and double check again that you have typed corretly. `sdx` in the code below referes to whatever your disk is called, e.g. `sda`. 
+
+	```
+	sgdisk -z /dev/sdx
+	```
+
 ### Git
 https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
 https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
