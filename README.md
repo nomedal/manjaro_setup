@@ -7,7 +7,7 @@
     * [Manjaro](#manjaro)
     * [Git](#git)
   	* [Dropbox](#dropbox)
-  	* [NordVPN](#nordvpn)
+  	* [NordVPN](#nordvpn)
   	* [Remmina](#remmina)
   	* [Wondershaper](#wondershaper)
   	* [Virtual manager](#virtual-manager)
@@ -146,6 +146,16 @@ Note that speed is in 'kbps'.
 	```
 	sudo pacman -S qemu libvirt ovmf virt-manager
 	```
+
+### TinyFPGA B-series programmer
+#### Installation
+	Make sure to use python3 and also pip3 for this. 
+	```
+	pip install tinyfpga
+	```
+#### Source:
+	https://github.com/tinyfpga/TinyFPGA-B-Series/tree/master/programmer
+
 ## Package management
 In general when you want to install something you have to download a package and build them. First make a directory for your builds e.g -/builds in your home directory.
 Cd into this directory, then:
