@@ -11,6 +11,7 @@
   	* [Remmina](#remmina)
   	* [Wondershaper](#wondershaper)
   	* [Virtual manager](#virtual-manager)
+	* [TinyFPGA B-series programmer](#tinyfpga-b-series-programmer)
   * [Package management](#package-management)
 
 ## Introduction
